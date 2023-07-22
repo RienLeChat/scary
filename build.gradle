@@ -86,3 +86,10 @@ publishing {
 		// retrieving dependencies.
 	}
 }
+// This is the repositories block in your build.gradle. NOT the one in publishing, or in buildscript. If it does not exist already, create it.
+repositories {
+	maven {
+		name = 'GeckoLib'
+		url 'https://dl.cloudsmith.io/public/geckolib3/geckolib/maven/'
+	}
+}
